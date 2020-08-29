@@ -1,16 +1,25 @@
 <template>
   <div id="data-view">
     <dv-full-screen-container>
-         <top-header />
+      <top-header />
+
+      <div class="main-content">
+        <business class="business"/>
+        <div class="spaceLine"></div>
+        <sale class="sale"/>
+      </div>
+
     </dv-full-screen-container>
   </div>
 </template>
 
 <script>
-import topHeader from './topHeader'
+import topHeader from "./topHeader";
+import business from "./business";
+import sale from "./sale";
 export default {
   //import 引入的组件需要注入到对象中才能使用
-  components: {topHeader,},
+  components: { topHeader, business, sale },
   props: {},
   data() {
     //这里存数据
@@ -37,6 +46,10 @@ export default {
 </script>
 
 <style scoped>
+.spaceLine{
+  width: 100%;
+  height: 1%;
+}
 #data-view {
   width: 100%;
   height: 100%;
@@ -44,17 +57,21 @@ export default {
   color: #fff;
 }
 #data-view #dv-full-screen-container {
-  background-image: url('/static/img/background02.jpg');
+  background-image: url("/static/img/background01.png");
+  /* background-image: url("/static/img/background02.jpg"); */
+  
   background-size: 100% 100%;
   box-shadow: 0 0 3px blue;
   display: flex;
   flex-direction: column;
+  /* opacity:0.8 */
 }
-/* #data-view .main-content {
+#data-view .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+/*
 #data-view .block-left-right-content {
   flex: 1;
   display: flex;
@@ -75,4 +92,12 @@ export default {
   padding-bottom: 20px;
 } */
 
+/* .business{
+  background-color:coral;
+  width: 30%;
+}
+.business{
+  background-color:lightblue;
+  width: 70%;
+} */
 </style>

@@ -11,6 +11,7 @@ import httpRequest from '@/utils/httpRequest' // api: https://github.com/axios/a
 import { isAuth } from '@/utils'
 import cloneDeep from 'lodash/cloneDeep'
 import dataV from '@jiaminghi/data-view'
+// import './icons/iconfont.css'
 
 Vue.use(VueCookie)
 Vue.use(dataV)

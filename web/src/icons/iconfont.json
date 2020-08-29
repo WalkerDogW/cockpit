@@ -1,0 +1,16 @@
+{
+  "id": "2034751",
+  "name": "cockpit",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7478257",
+      "name": "人数",
+      "font_class": "renshu",
+      "unicode": "e740",
+      "unicode_decimal": 59200
+    }
+  ]
+}

@@ -41,45 +41,23 @@
 -->
 
 <template>
-  <div>
-    <dv-capsule-chart :config="config" style="width:300px;height:200px" />
-    <dv-border-box-1  style="width:300px;height:200px" ></dv-border-box-1>
+  <div class="home">
+    <business class="business" />
+    <sale class="sale"/>
   </div>
 </template>
 
 <script>
+import business from "../demo/business";
+import sale from "../demo/sale";
 export default {
+  
   //import 引入的组件需要注入到对象中才能使用
-  components: {},
+  components: { business,sale},
   props: {},
   data() {
     //这里存数据
-    return {
-      config: {
-        data: [
-          {
-            name: "南阳",
-            value: 167,
-          },
-          {
-            name: "周口",
-            value: 67,
-          },
-          {
-            name: "漯河",
-            value: 123,
-          },
-          {
-            name: "郑州",
-            value: 55,
-          },
-          {
-            name: "西峡",
-            value: 98,
-          },
-        ],
-      },
-    };
+    return {};
   },
   //计算属性
   computed: {},
@@ -102,4 +80,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
